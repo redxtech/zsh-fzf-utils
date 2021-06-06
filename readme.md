@@ -1,0 +1,29 @@
+# fzf-utils
+> fzf-utils is a zsh plugin that provides functions which use fzf to do cool things.
+
+## Installing
+Install it with your favourite zsh package manager, or clone it directly to your
+`$ZSH_CUSTOM/plugins` directory with git, and add `zsh-fzf-utils` to the plugins
+array in your `.zshrc` file:
+
+```zsh
+plugins=(... zsh-fzf-utils)
+```
+
+## Usage
+`kp` is very easy to use, simply run the command with the name of the
+process you wish to kill as the only arg:
+
+```zsh
+kp <process name>
+```
+`fp` is also very easy to use. Simply run the command and select the directory
+in your path that you want to search, and then you can see all the binaries
+inside that directory.
+```zsh
+fp
+```
+
+## Author
+**fzf-utils** © [Gabe Dunn](https://github.com/redxtech), Released under the [MIT](./license.md) License.
+
