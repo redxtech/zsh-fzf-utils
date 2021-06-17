@@ -38,7 +38,7 @@ fp
 
 ## Credit
 I adapted these functions from this medium article:
-[How FZF and ripgrep improved my workflow][1]
+[How FZF and ripgrep improved my workflow][1].
 
 [1]: https://sidneyliebrand.medium.com/how-fzf-and-ripgrep-improved-my-workflow-61c7ca212861
 
