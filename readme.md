@@ -36,6 +36,12 @@ inside that directory.
 fp
 ```
 
+## Credit
+I adapted these functions from this medium article:
+[How FZF and ripgrep improved my workflow][1]
+
+[1]: https://sidneyliebrand.medium.com/how-fzf-and-ripgrep-improved-my-workflow-61c7ca212861
+
 ## Author
 **fzf-utils** © [Gabe Dunn](https://github.com/redxtech), Released under the [MIT](./license.md) License.
 
