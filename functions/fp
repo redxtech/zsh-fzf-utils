@@ -15,11 +15,11 @@ fp () {
     fi
 
     # save currently selected path as a variable
-    LOCATION=$(echo "$PATH" | tr ':' '\n' | eval "fzf $FZF_DEFAULT_OPTS --header='[find:path]'")
+    local LOCATION=$(echo "$PATH" | tr ':' '\n' | eval "fzf $FZF_DEFAULT_OPTS --header='[find:path]'")
 
     # recursively search path
     if test "$(echo "$LOCATION" | wc -w)" -eq 1; then
-        COMMAND=$(rg --files "$LOCATION" | rev | cut -d'/' -f1 | rev | tr ' ' '\n' | eval "fzf $FZF_DEFAULT_OPTS --header='[find:exe] => $LOCATION'")
+        local COMMAND=$(rg --files "$LOCATION" | rev | cut -d'/' -f1 | rev | tr ' ' '\n' | eval "fzf $FZF_DEFAULT_OPTS --header='[find:exe] => $LOCATION'")
         if test "$(echo "$COMMAND" | wc -w)" -eq 1; then
             echo "$LOCATION $COMMAND"
         else
