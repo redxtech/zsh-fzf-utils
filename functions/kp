@@ -3,7 +3,7 @@
 # script to kill a process found with fzf
 kp () {
     # make sure fzf is installed
-    if [[ -z $commands[fzf] ]]; then
+    if (( ! $+commands[fzf] )); then
         echo 'fzf is not installed.'
         return 1
     fi

@@ -3,13 +3,13 @@
 # script to search path with fzf & rg
 fp () {
     # make sure fzf is installed
-    if [[ -z $commands[fzf] ]]; then
+    if (( ! $+commands[fzf] )); then
         echo 'fzf is not installed.'
         return 1
     fi
 
     # make sure ripgrep is installed
-    if [[ -z $commands[rg] ]]; then
+    if (( ! $+commands[rg] )); then
         echo 'ripgrep is not installed.'
         return 1
     fi
