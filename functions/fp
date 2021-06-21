@@ -15,7 +15,7 @@ fp () {
     fi
 
     # save currently selected path as a variable
-    local LOCATION=$(echo "$PATH" | tr ':' '\n' | eval "fzf $FZF_DEFAULT_OPTS --header='[find:path]'")
+    local LOCATION=$(echo "$PATH" | tr ':' '\n' | eval "fzf --header='[find:path]'")
 
     # recursively search path
     if test "$(echo "$LOCATION" | wc -w)" -eq 1; then
